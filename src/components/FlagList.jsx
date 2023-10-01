@@ -9,11 +9,11 @@ import Chip from "@material-ui/core/Chip";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
-    width: "50vw",
+    minWidth: "50vw",
+    maxWidth: "80vw",
+    height: "10vh",
     backgroundColor: "#130f40",
     color: "#fff",
-    height: "10vh",
   },
   bullet: {
     display: "inline-block",
@@ -30,19 +30,22 @@ const useStyles = makeStyles({
 
 export default function FlagList(props) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
       <CardContent>
         <Typography variant="h6">
-          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-evenly",
+            }}
+          >
             <Typography variant="h5" component="h2" align="center" gutterBottom>
-              {bull}
               Category
-              {bull}
             </Typography>
 
+            <br />
             <Chip
               size="medium"
               label="Any"

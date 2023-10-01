@@ -33,15 +33,17 @@ export default function App() {
 
   return (
     <div className="container">
-      {flagVisible && (
-        <div
-          style={{ height: "2vh", width: "50vw", backgroundColor: "#130f40" }}
-          onClick={() => {
-            setFlagVisible(false);
-          }}
-        ></div>
-      )}
-      {!flagVisible && <FlagList handleClick={handleClick} />}
+      <div style={{ display: "inline-grid", gridAutoColumns: "1fr 1fr" }}>
+        {flagVisible && (
+          <div
+            style={{ height: "2vh", width: "50vw", backgroundColor: "#130f40" }}
+            onClick={() => {
+              setFlagVisible(false);
+            }}
+          ></div>
+        )}
+        {!flagVisible && <FlagList handleClick={handleClick} />}
+      </div>
       <JokeCard joke={joke} fetchData={fetchData} />
     </div>
   );

@@ -5,15 +5,14 @@ import PropTypes from "prop-types";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Fab from "@material-ui/core/Fab";
 import ReplayIcon from "@material-ui/icons/Replay";
 
 const useStyles = makeStyles({
   root: {
-    minWidth: 275,
-    width: "50vw",
+    minWidth: "50vw",
+    maxWidth: "60vw",
     backgroundColor: "#7B1FA2",
     color: "#fff",
   },
@@ -32,18 +31,20 @@ const useStyles = makeStyles({
 
 export default function JokeCard(props) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
 
   return (
     <Card className={classes.root}>
       <CardContent>
         <Typography variant="h2" component="h2" align="center" gutterBottom>
-          {bull}
           {props.joke.category}
-          {bull}
         </Typography>
 
-        <Typography variant="h6" component="p" style={{ marginTop: "50px" }}>
+        <Typography
+          variant="h6"
+          component="p"
+          align="center"
+          style={{ marginTop: "50px" }}
+        >
           {props.joke.joke}
           <br />
         </Typography>

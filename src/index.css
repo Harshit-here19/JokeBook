@@ -11,12 +11,18 @@ body {
 }
 
 .btn {
-  right: -620px;
+  margin: auto !important;
   background: #ea80fc !important;
   box-shadow: 0px 3px 5px -3px #ea80fc, 0px 6px 10px -3px #ea80fc,
     0px 1px 37px -2px #ea80fc !important;
+  margin-bottom: 20px !important;
 }
 
 .btn:hover {
   background: #e040fb !important;
+}
+
+.chips {
+  display: flex;
+  justify-content: space-between;
 }
