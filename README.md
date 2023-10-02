@@ -21,5 +21,5 @@ back to Joke Book
 ![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/026cbaf8-8961-4ec4-aefd-0ecf4eca632c)
 
 ### Link
-https://rainbow-cocada-d79d92.netlify.app/
+https://graceful-raindrop-f1068b.netlify.app/
 checkout Joke Book App on the link above
