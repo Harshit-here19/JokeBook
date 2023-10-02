@@ -32,10 +32,15 @@ export default function JokeBook() {
   return (
     <div className="container">
       <h1>JOKE BOOK</h1>
-      <div style={{ display: "inline-grid", gridAutoColumns: "1fr 1fr" }}>
+      <div>
         {flagVisible && (
           <div
-            style={{ height: "2vh", width: "50vw", backgroundColor: "#130f40" }}
+            style={{
+              height: "2vh",
+              width: "50vw",
+              backgroundColor: "#130f40",
+              borderRadius: "5px",
+            }}
             onClick={() => {
               setFlagVisible(false);
             }}

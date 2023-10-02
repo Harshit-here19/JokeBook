@@ -10,12 +10,6 @@ import Fab from "@material-ui/core/Fab";
 import ReplayIcon from "@material-ui/icons/Replay";
 
 const useStyles = makeStyles({
-  root: {
-    minWidth: "50vw",
-    maxWidth: "60vw",
-    backgroundColor: "#7B1FA2",
-    color: "#fff",
-  },
   bullet: {
     display: "inline-block",
     margin: "0 2px",
@@ -33,23 +27,10 @@ export default function JokeCard(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardContent>
-        <Typography variant="h2" component="h2" align="center" gutterBottom>
-          {props.joke.category}
-        </Typography>
-
-        <Typography
-          variant="h6"
-          component="p"
-          align="center"
-          style={{ marginTop: "50px" }}
-        >
-          {props.joke.joke}
-          <br />
-        </Typography>
-      </CardContent>
-      <CardActions>
+    <>
+      <div className="root">
+        <h2>{props.joke.category}</h2>
+        <h6>{props.joke.joke}</h6>
         <Fab
           variant="circular"
           size="medium"
@@ -60,8 +41,8 @@ export default function JokeCard(props) {
         >
           <ReplayIcon />
         </Fab>
-      </CardActions>
-    </Card>
+      </div>
+    </>
   );
 }
 

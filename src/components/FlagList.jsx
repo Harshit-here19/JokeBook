@@ -32,65 +32,55 @@ export default function FlagList(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardContent>
-        <Typography variant="h6">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-evenly",
-            }}
-          >
-            <Typography variant="h5" component="h2" align="center" gutterBottom>
-              Category
-            </Typography>
-
-            <br />
-            <Chip
-              size="medium"
-              label="Any"
-              clickable
-              onClick={() => {
-                props.handleClick("Any");
-              }}
-            />
-            <Chip
-              size="medium"
-              label="Programming"
-              clickable
-              onClick={() => {
-                props.handleClick("Programming");
-              }}
-            />
-            <Chip
-              size="medium"
-              label="Misc"
-              clickable
-              onClick={() => {
-                props.handleClick("Misc");
-              }}
-            />
-            <Chip
-              size="medium"
-              label="Dark"
-              clickable
-              onClick={() => {
-                props.handleClick("Dark");
-              }}
-            />
-            <Chip
-              size="medium"
-              label="Pun"
-              clickable
-              onClick={() => {
-                props.handleClick("Pun");
-              }}
-            />
-          </div>
-          <br />
+    <>
+      <div className="listRoot">
+        <Typography variant="h5" component="h2" align="center" gutterBottom>
+          Category
         </Typography>
-      </CardContent>
-    </Card>
+
+        <br />
+        <Chip
+          size="medium"
+          label="Any"
+          clickable
+          onClick={() => {
+            props.handleClick("Any");
+          }}
+        />
+        <Chip
+          size="medium"
+          label="Programming"
+          clickable
+          onClick={() => {
+            props.handleClick("Programming");
+          }}
+        />
+        <Chip
+          size="medium"
+          label="Misc"
+          clickable
+          onClick={() => {
+            props.handleClick("Misc");
+          }}
+        />
+        <Chip
+          size="medium"
+          label="Dark"
+          clickable
+          onClick={() => {
+            props.handleClick("Dark");
+          }}
+        />
+        <Chip
+          size="medium"
+          label="Pun"
+          clickable
+          onClick={() => {
+            props.handleClick("Pun");
+          }}
+        />
+      </div>
+    </>
   );
 }
 

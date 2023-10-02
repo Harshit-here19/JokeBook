@@ -25,11 +25,16 @@ export default function FactUpLine() {
 
   return (
     <div className="container">
-      <h1>RANDOM FACTS</h1>
+      <h1>FACTS</h1>
       <div style={{ display: "inline-grid", gridAutoColumns: "1fr 1fr" }}>
         {flagVisible && (
           <div
-            style={{ height: "2vh", width: "50vw", backgroundColor: "#7B1FA2" }}
+            style={{
+              height: "2vh",
+              width: "50vw",
+              backgroundColor: "#130f40",
+              borderRadius: "5px",
+            }}
             onClick={() => {
               setFlagVisible(false);
             }}

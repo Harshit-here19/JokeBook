@@ -33,23 +33,10 @@ export default function FactCard(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardContent>
-        <Typography variant="h2" component="h2" align="center" gutterBottom>
-          Facts:
-        </Typography>
-
-        <Typography
-          variant="h6"
-          component="p"
-          align="center"
-          style={{ marginTop: "50px" }}
-        >
-          {props.fact}
-          <br />
-        </Typography>
-      </CardContent>
-      <CardActions>
+    <>
+      <div className="root">
+        <h2>Facts: </h2>
+        <h6>{props.fact}</h6>
         <Fab
           variant="circular"
           size="medium"
@@ -60,8 +47,8 @@ export default function FactCard(props) {
         >
           <ReplayIcon />
         </Fab>
-      </CardActions>
-    </Card>
+      </div>
+    </>
   );
 }
 
