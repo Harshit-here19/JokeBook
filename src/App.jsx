@@ -1,50 +1,40 @@
 import { useState } from "react";
-import FlagList from "./components/FlagList";
-import JokeCard from "./components/JokeCard";
+import JokeBook from "./components/JokeBook";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
+import Fab from "@material-ui/core/Fab";
+import FactUpLine from "./components/FactUpLine";
 
 export default function App() {
-  const [flagVisible, setFlagVisible] = useState(true);
-  const [joke, setJoke] = useState({
-    category: "Category",
-    joke: "Reload for Jokes",
-  });
-  const [category, setCategory] = useState("Any");
-
-  async function fetchData() {
-    let url = `https://v2.jokeapi.dev/joke/${category}?type=single`;
-    const response = await fetch(url);
-    const data = await response.json();
-    setJoke({
-      category: data.category,
-      joke: data.joke,
-    });
-  }
-
-  async function handleClick(e) {
-    setCategory(e);
-    console.log(e);
-    console.log(joke.category);
-
-    setTimeout(() => {
-      setFlagVisible(true);
-      fetchData();
-    }, 500);
-  }
+  const [swipe, setSwipe] = useState(false);
 
   return (
-    <div className="container">
-      <div style={{ display: "inline-grid", gridAutoColumns: "1fr 1fr" }}>
-        {flagVisible && (
-          <div
-            style={{ height: "2vh", width: "50vw", backgroundColor: "#130f40" }}
-            onClick={() => {
-              setFlagVisible(false);
-            }}
-          ></div>
-        )}
-        {!flagVisible && <FlagList handleClick={handleClick} />}
-      </div>
-      <JokeCard joke={joke} fetchData={fetchData} />
+    <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <Fab
+        variant="circular"
+        size="medium"
+        color="primary"
+        className="appBtn"
+        onClick={() => {
+          setSwipe(false);
+        }}
+      >
+        <ChevronLeftIcon />
+      </Fab>
+      {!swipe && <JokeBook />}
+      {swipe && <FactUpLine />}
+
+      <Fab
+        variant="circular"
+        size="medium"
+        color="primary"
+        className="appBtn"
+        onClick={() => {
+          setSwipe(true);
+        }}
+      >
+        <ChevronRightIcon />
+      </Fab>
     </div>
   );
 }

@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ce93d8;
+}
+
+h1 {
+  font-family: "Pixelify Sans", "Times New Roman";
+  margin-bottom: 30px;
+  font-size: 80px;
 }
 
 .container {
@@ -8,6 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  align-self: center;
 }
 
 .btn {
@@ -22,7 +37,22 @@ body {
   background: #e040fb !important;
 }
 
+.appBtn {
+  background: #130f40 !important;
+  color: #fff;
+  box-shadow: 0px 3px 5px -3px #ea80fc, 0px 6px 10px -3px #ea80fc,
+    0px 1px 37px -2px #ea80fc !important;
+  margin: auto 2vw !important;
+}
+
+.appBtn:hover {
+  background: #7b1fa2 !important;
+}
+
 .chips {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 400px) {
 }
