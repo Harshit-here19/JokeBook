@@ -21,5 +21,5 @@ back to Joke Book
 ![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/026cbaf8-8961-4ec4-aefd-0ecf4eca632c)
 
 ### Link
-https://curious-cheesecake-90b6d3.netlify.app/
+https://rainbow-cocada-d79d92.netlify.app/
 checkout Joke Book App on the link above
