@@ -1,22 +1,25 @@
-# Joke Book
+# Ze Book
 
 My First Reaact App, and I have used Vite, and Material-UI and JokeApi for generating Jokes
 
-#### Initial Part of App
-![image](https://github.com/Harshit-here19/JokeBook/assets/125533407/cb18fe94-3ac6-4369-a89f-c7bfb8e3b9fe)
+## Joke Book
+![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/9637766f-d981-46b5-80f2-b29a4f2f3beb)
 
 #### When Reload button is clicked then a random joke will be visible
-
-![image](https://github.com/Harshit-here19/JokeBook/assets/125533407/ea9b3631-1da5-4d68-90f8-330206bfbd35)
+![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/79e2295a-1525-46d5-99e5-bb975f5b63b0)
 
 #### There is also a category section from which you can choose different categories
+![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/4e8584a8-44f8-447f-b5dc-66066f5ea303)
+After choosing the category click on reload button again for jokes in that category
+By Clicking the Right Arrow Button you can navigate to Facts Page, by Clicking Left Button Navigate 
+back to Joke Book
 
-![image](https://github.com/Harshit-here19/JokeBook/assets/125533407/84d3a2e7-a9b5-4ad4-b06a-9b48c0c8b430)
+## Facts 
+![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/6febae03-3ff7-43fc-ab06-f91298a1e879)
 
-#### After choosing the category click on reload button again for jokes in that category
-
-![image](https://github.com/Harshit-here19/JokeBook/assets/125533407/72e821c6-a298-468b-a7ff-a3ffe1e07924)
+#### When Reload button is clicked then a random fact will be visible
+![image](https://github.com/Harshit-here19/ZeBook/assets/125533407/026cbaf8-8961-4ec4-aefd-0ecf4eca632c)
 
 ### Link
-https://fancy-biscotti-7f82a3.netlify.app/
+https://curious-cheesecake-90b6d3.netlify.app/
 checkout Joke Book App on the link above
